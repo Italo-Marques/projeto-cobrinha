@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="imagens/snake-game-favicon.webp">
+    <title>Jogo da Cobrinha</title>
+</head>
+<body>
+<div class="grid"></div>
+<button id="btn">
+<div class="shape"></div>
+<div class="svg-box">
+    <svg
+    width="144"
+    height="40"
+    viewBox="0 0 144 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    >
+    <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M8 0H0V8V16V24V32V40H8V32H16H24V24H32V16V8H24V0H16H8ZM24 8V16V24H16H8V16V8H16H24ZM96 32V40H104V32V24V16V8H96V0H88H80V8H72V16V24V32V40H80V32H88H96ZM80 8H88H96V16V24H88H80V16V8ZM112 16V8V0H120V8V16H124V24H116V16H112ZM132 24V32V40H124V32V24H132ZM132 24V16H136V8V0H144V8V16H140V24H132ZM48 0H40V8V16V24V32V40H48H56H64V32H56H48V24V16V8V0Z"
+        fill="white"
+    ></path>
+    </svg>
+</div>
+</button>
+
+    <div class="score">score: <span class="score--value">00</span></div>
+    <div class="menu-screen">
+        <span class="game-over">game over</span>
+        <button class="btn-play">
+            <span class="material-symbols-outlined">
+                play_circle
+            </span>
+            Jogar novamente
+        </button>
+    </div>
+    <canvas width="600" height="600"></canvas>
+    <script src="./js/script.js"></script>
+</body>
+</html>
